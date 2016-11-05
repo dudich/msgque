@@ -1,6 +1,8 @@
-# msgque
+# MSGQue
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.1.0.
+
+[![Join the chat at https://gitter.im/msgque/msgque](https://badges.gitter.im/msgque/msgque.svg)](https://gitter.im/msgque/msgque?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Getting Started
 

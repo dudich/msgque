@@ -7,13 +7,9 @@ module.exports = {
 
   // Sequelize connection opions
   sequelize: {
-    uri: 'sqlite://',
+    uri: 'mysql://root:@localhost/msgque_msgque?zeroDateTimeBehavior=convertToNull',
     options: {
       logging: false,
-      storage: 'dev.sqlite',
-      define: {
-        timestamps: false
-      }
     }
   },
 

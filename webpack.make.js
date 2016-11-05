@@ -38,7 +38,7 @@ module.exports = function makeWebpackConfig(options) {
         config.entry = {};
     } else {
         config.entry = {
-            app: './client/app/app.js',
+            app: path.join(__dirname, '/client/app/app.js'),
             polyfills: './client/polyfills.js',
             vendor: [
                 'angular',
