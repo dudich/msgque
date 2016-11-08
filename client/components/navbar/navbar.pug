@@ -13,8 +13,8 @@ div.navbar.navbar-default.navbar-static-top
         li(ng-repeat='item in $ctrl.menu', ui-sref-active='active')
           a(ui-sref='{{item.state}}') {{item.title}}
 
-        li(ng-show='$ctrl.isAdmin()', ui-sref-active='active')
-          a(ui-sref='admin') Admin
+        li(ng-show='$ctrl.isLoggedIn()', ui-sref-active='active')
+          a(ui-sref='send') Send SMS
 
       ul.nav.navbar-nav.navbar-right
         li(ng-hide='$ctrl.isLoggedIn()', ui-sref-active='active')
@@ -29,6 +29,10 @@ div.navbar.navbar-default.navbar-static-top
         li(ng-show='$ctrl.isLoggedIn()', ui-sref-active='active')
           a(ui-sref='settings')
             span.glyphicon.glyphicon-cog
+
+        li(ng-show='$ctrl.isLoggedIn()', ui-sref-active='active')
+          a(ui-sref='kannel-new')
+            span.glyphicon.glyphicon-envelope
 
         li(ng-show='$ctrl.isLoggedIn()')
           a(ui-sref='logout') Logout
